@@ -1,7 +1,7 @@
 package main
 
-// import library that allowas you to output and input 
-import  "fmt"
+// import library that allowas you to output and input
+import "fmt"
 
 func main() {
 	// print line
@@ -63,7 +63,29 @@ func main() {
 	fmt.Println(slice)
 	fmt.Println(cap(slice))
 
-	
+	// Loops
+	for i:=0;i<5;i++ {
+		fmt.Println(i)
+	}
+
+	// Iterate arrays
+	var arr2 = [...]int8{11,22,33,44}
+	fmt.Println(arr2)
+	for idx,val := range arr2{
+		fmt.Println(idx,val)
+	}
+	// if you don't want to show index
+	for _ , val := range arr2{
+		fmt.Println(val)
+	}
+
+	// Go while loops are also for
+	i := 0
+	for i<8{
+		fmt.Println(i)
+		i+=1
+	}
+
 
 
 }
