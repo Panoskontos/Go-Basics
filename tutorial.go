@@ -131,7 +131,14 @@ func main() {
 	percent = float64(13) / float64(23)
 	fmt.Println(percent)
 
-	
+	// Pointer (Took it from C)
+	// A variable that points to the memory location of a variable
+	fmt.Println(&percent)
+	// var value int
+	// scan can assign value because it knows the memory
+	// otherwise it can't
+	// fmt.Scan(&value)
+
 
 }
 
