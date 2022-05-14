@@ -125,6 +125,14 @@ func main() {
 	p1.name = "Poli"
 	fmt.Println(p1)  
 
+
+	// Type Conversions
+	var percent float64
+	percent = float64(13) / float64(23)
+	fmt.Println(percent)
+
+	
+
 }
 
 
