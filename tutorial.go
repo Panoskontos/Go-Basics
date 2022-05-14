@@ -144,8 +144,10 @@ func main() {
 	
 	// Slices again are more flexible and better to use in general
 	var dynamic = []int{1,2,3}
+	// adding something and changing size of array
+	fmt.Println(len(dynamic))
 	dynamic = append(dynamic, 4)
-	fmt.Println(dynamic)
+	fmt.Println(len(dynamic))
 
 
 }
