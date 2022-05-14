@@ -1,7 +1,9 @@
+// Go is organised in packeages that contain files
 package main
 
 // import library that allowas you to output and input
 import "fmt"
+
 
 
 
@@ -148,6 +150,10 @@ func main() {
 	fmt.Println(len(dynamic))
 	dynamic = append(dynamic, 4)
 	fmt.Println(len(dynamic))
+
+
+	// Import package helper
+	fmt.Println(power(3,2))
 
 
 }
