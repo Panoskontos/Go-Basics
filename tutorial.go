@@ -62,6 +62,7 @@ func main() {
 	fmt.Println(len(arr))
 
 	// Slices arrays that have dynamic size
+	// Because we don't always know the size
 	var slice = []int{1,2,3}
 	fmt.Println(slice)
 	fmt.Println(cap(slice))
@@ -140,6 +141,13 @@ func main() {
 	// fmt.Scan(&value)
 
 
+	
+	// Slices again are more flexible and better to use in general
+	var dynamic = []int{1,2,3}
+	dynamic = append(dynamic, 4)
+	fmt.Println(dynamic)
+
+
 }
 
 
@@ -159,3 +167,4 @@ func mymath2(a int, b int) (result1 int, result2 int){
 	result2 = a-b
 	return
 }
+
