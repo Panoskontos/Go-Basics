@@ -94,10 +94,41 @@ func main() {
 	fmt.Println(mymath(2,567))
 	fmt.Println(mymath2(2,567))
 
+	// Hash Map
+	var a = make(map[string]string)
+	a["brand"] = "Ford"
+	a["model"] = "Mustang"
+	a["year"] = "1964"
+	a["year"] = "0"
+	a["liked"] = "a lot"
 
+	fmt.Println(a)
+	for k, v := range a {        // loop with no order
+		fmt.Printf("%v : %v, ", k, v)
+	  }
+
+
+	// Sctructs
+	// Go uses structs instead of classes
+
+	type Human struct {
+		name string
+		age int
+		job string
+	}
+
+	var p1 Human
+	fmt.Println(p1)  
+
+	p1.age = 45
+	p1.job = "Dev"
+	p1.name = "Poli"
+	fmt.Println(p1)  
 
 }
 
+
+// FUNCTIONS
 // Functions you can put on top or bottom
 func printname(name string){
 	fmt.Printf("I got executed %v", name)
