@@ -3,6 +3,9 @@ package main
 // import library that allowas you to output and input
 import "fmt"
 
+
+
+
 func main() {
 	// print line
 	fmt.Println("Welcome to my game")
@@ -87,5 +90,26 @@ func main() {
 	}
 
 
+	printname(name)
+	fmt.Println(mymath(2,567))
+	fmt.Println(mymath2(2,567))
 
+
+
+}
+
+// Functions you can put on top or bottom
+func printname(name string){
+	fmt.Printf("I got executed %v", name)
+}
+
+func mymath(a int, b int) int{
+	return a+b
+}
+
+// Multiple returns
+func mymath2(a int, b int) (result1 int, result2 int){
+	result1 = a*b
+	result2 = a-b
+	return
 }
