@@ -2,7 +2,10 @@
 package main
 
 // import library that allowas you to output and input
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 
 
@@ -137,12 +140,18 @@ func main() {
 	// Pointer (Took it from C)
 	// A variable that points to the memory location of a variable
 	fmt.Println(&percent)
-	// var value int
+	var value int
 	// scan can assign value because it knows the memory
 	// otherwise it can't
-	// fmt.Scan(&value)
-
-
+	
+	
+	// Go routines
+	// adding go adds a new goroutine to run in parallel
+	go sendTicket(1)
+	
+	// While i wait to input it should run the send ticket
+	fmt.Scan(&value)
+	
 	
 	// Slices again are more flexible and better to use in general
 	var dynamic = []int{1,2,3}
@@ -151,9 +160,13 @@ func main() {
 	dynamic = append(dynamic, 4)
 	fmt.Println(len(dynamic))
 
+	
+
 
 	// Import package helper
 	fmt.Println(power(3,2))
+
+
 
 
 }
@@ -176,3 +189,15 @@ func mymath2(a int, b int) (result1 int, result2 int){
 	return
 }
 
+// CONCURRENCY
+// Goroutines
+func sendTicket(tickets int){
+	
+// If it would take a lot of time?
+time.Sleep(10*time.Second)
+
+var tick = fmt.Sprintf("%v ticket for user",tickets)
+fmt.Printf("\n sending ticket %v  \n  to email \n", tick)
+
+
+}
