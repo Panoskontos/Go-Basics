@@ -6,7 +6,7 @@ import  "fmt"
 func main() {
 	// print line
 	fmt.Println("Welcome to my game")
-
+	
 	// Variables and data types
 	var name string = "Panos"
 	// name = 23 will result in error
@@ -27,8 +27,20 @@ func main() {
 	fmt.Println(id4)
 
 
-	// Outputing vaules use printf and %v
-	fmt.Printf("Hello %v %v, how are you?", name, id)
+	// Outputing vaules use printf and %v = value
+	// see notes for string formats
+	fmt.Printf("Hello %v %v %10.2f, how are you? \n", name, id,id3)
 	
+	// Get user input
+	var username string 
+	fmt.Scan(&username)
+	// & is reference to memory location
+	fmt.Printf("Hello %v welcome to the game \n", username)
+	
+	fmt.Printf("Enter your age?: ")
+	var age int64
+	fmt.Scan(&age)
+	fmt.Printf("\nYour age is: %v",age)
+
 
 }

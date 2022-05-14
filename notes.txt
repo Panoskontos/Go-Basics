@@ -7,3 +7,6 @@ go run <namefile>
 go build <namefile>
 It will create an executable file
 
+
+Go string Formatting
+https://gobyexample.com/string-formatting
