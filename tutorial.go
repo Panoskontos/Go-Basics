@@ -33,14 +33,37 @@ func main() {
 	
 	// Get user input
 	var username string 
-	fmt.Scan(&username)
+	// fmt.Scan(&username)
 	// & is reference to memory location
+	
 	fmt.Printf("Hello %v welcome to the game \n", username)
 	
+	// Conditionals
 	fmt.Printf("Enter your age?: ")
 	var age int64
-	fmt.Scan(&age)
-	fmt.Printf("\nYour age is: %v",age)
+	// fmt.Scan(&age)
+	fmt.Printf("\nYour age is: %v \n",age)
+
+	if age >= 10 {
+		fmt.Println("You are allowed to play")
+	} else if age >=8 {
+		fmt.Println("You need a litle more time kido")
+	} else {
+		fmt.Println("You are not allowed")
+	}
+
+	// Arrays
+	var arr = [...]string{"hello","man","how","are","you"} 
+	fmt.Println(arr[0])
+	fmt.Println(arr[0:3])
+	fmt.Println(len(arr))
+
+	// Slices arrays that have dynamic size
+	var slice = []int{1,2,3}
+	fmt.Println(slice)
+	fmt.Println(cap(slice))
+
+	
 
 
 }
