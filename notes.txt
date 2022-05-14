@@ -1,0 +1,9 @@
+commands
+
+go 
+
+go run <namefile>
+
+go build <namefile>
+It will create an executable file
+
