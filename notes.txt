@@ -15,3 +15,7 @@ https://gobyexample.com/string-formatting
 When you have a lot of files and packages you should run 
 go build .
 go run .
+
+
+To create mod file
+go mod init example/<parentfile name>
