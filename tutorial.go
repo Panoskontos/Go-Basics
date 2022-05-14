@@ -25,4 +25,10 @@ func main() {
 	fmt.Println(id2)
 	fmt.Println(id3)
 	fmt.Println(id4)
+
+
+	// Outputing vaules use printf and %v
+	fmt.Printf("Hello %v %v, how are you?", name, id)
+	
+
 }
